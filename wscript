@@ -9,7 +9,7 @@ def configure(blah): pass
 def build(bld):
     bld.program(features='cxx',
                 use='sferes2',
-                uselib='BOOST TBB',
+                uselib='BOOST TBB PTHREAD',
                 includes=". ../../src ../ ../../ ../../../",
                 source='test_cvt_map_elites.cpp',
                 target='test_cvt_map_elites'
